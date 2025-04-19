@@ -35,14 +35,6 @@
       min-height: 700px;
       box-sizing: border-box;
     }
-
-    .sidebar {
-      width: 20vw;
-      text-align: left;
-      align-self: flex-start;
-      margin-right: 2.5vw;
-    }
-
     .content {
       width: 20vw;
       height: 60vh;
@@ -54,7 +46,12 @@
       box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
       transition: transform 0.5s ease-in-out;
     }
-
+	.content img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+	  border-radius: max(3vw, 3vh);
+    }
     .content2 {
       width: 28vw;
       height: 60vh;
@@ -90,18 +87,6 @@
     .content3 ul {
       padding-left: 1vw;
     }
-
-    .sidebar img {
-      width: 100%;
-      border-radius: 0.83vw;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .sidebar img:hover {
-      transform: scale(1.05);
-    }
-
     .title {
       margin-top: 0.83vw;
       font-size: 1.1vw;
@@ -129,10 +114,6 @@
         min-width: auto;
       }
 
-      .sidebar {
-        margin-right: 0;
-        margin-left: 7%;
-      }
       .content,
       .content2,
       .content3 {
@@ -166,7 +147,6 @@
 <body>
   <div id="zoom-wrapper">
     <div class="container">
-      <div class="sidebar">
         <div class="content">
           <img src="Image.png" alt="Снимката не може да се зареди.">
           <div class="title">------------- Защо при мен? -------------</div>
@@ -178,7 +158,6 @@
             <li>харесва ми да преподавам</li>
             <li>тази година завършвам СМГ</li>
           </ul>
-        </div>
       </div>
 
       <div class="content2">
